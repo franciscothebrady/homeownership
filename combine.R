@@ -44,7 +44,8 @@ clean_hor <- function(filelist){
 # now apply the function to the whole list of files
 county_hor <- purrr::map_df(filelist, clean_hor)
 
-saveRDS(county_hor, "data/county_hor.Rds")
+# saveRDS(county_hor, "data/county_hor.Rds")
+# write_csv(county_hor, "data/home_county.csv.gz")
 
 # for fun 
 library(ggplot2)
